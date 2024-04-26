@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>이벤트 배너 Plus</title>
+<style>
+/* 창 크기를 1920x1080으로 고정 */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('https://raw.githubusercontent.com/yunrang2/upload/master/HakgyoansimSamulhamR.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    width: 1270px;
+    height: 720px;
+    margin: 0;
+    padding: 0;
+    font-family: 'CustomFont';
+    background-color: lightgreen;
+}
+
+/* 왼쪽 상단 이미지 스타일 */
+#eventImg {
+    max-width: 100%;
+    max-height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* 오른쪽 하단 이미지 스타일 */
+#celebrateImg {
+    max-width: 200px;
+    max-height: auto;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+</style>
+</head>
+<body>
+<!-- 왼쪽 상단 이미지 -->
+<img id="eventImg" src="https://raw.githubusercontent.com/yunrang2/upload/master/%EC%BE%85%EC%9D%B4%20%EC%9D%B4%EB%B2%A4%ED%8A%B8.png" alt="이벤트 이미지">
+
+<!-- 오른쪽 하단 이미지 -->
+<img id="celebrateImg" src="https://raw.githubusercontent.com/yunrang2/upload/master/쿵쾅 1200일.png" alt="쾅이 1200일 이미지" onclick="returnToIndex()">
+
+  </div>
+
+<script>
+
+// 쾅이 1200일 이미지를 클릭하면 index.html로 돌아가기
+function returnToIndex() {
+    location.href = "index.html";
+}
+
+
+</script>
+
+</body>
+</html>

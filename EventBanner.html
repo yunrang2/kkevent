@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>이벤트 배너</title>
+<style>
+/* 창 크기를 435x500으로 고정 */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('https://raw.githubusercontent.com/yunrang2/upload/master/HakgyoansimSamulhamR.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    width: 435px;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    font-family: 'CustomFont';
+    background-color: lightgreen;
+}
+
+/* 이미지 스타일 */
+.event-banner-img {
+    width: 435px;
+    height: 500px;
+    cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+    
+<!-- 이벤트 배너 이미지 -->
+<img class=anner-i"event-img" src="https://raw.githubusercontent.com/yunrang2/upload/master/%EC%BE%85%EC%9D%B4%20%EC%9D%B4%EB%B2%A4%ED%8A%B8.png" alt="이벤트 배너 이미지" onclick="goToIndex()">
+
+<script>
+// index.html로 이동하는 함수
+function goToIndex() {
+    window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
